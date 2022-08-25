@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>BUDGET APP</h2>
+        <div class="upper-part">
+            <div class="budget-form">
+                <form id = "budget-form">
+                    <div>
+                        <label for="budget">Please Enter Your Budget</label>
+                        <input type="number" id="budget">
+                    </div>
+
+                    <input type="submit" value="Calculate">
+                </form>
+            </div>
+            
+            <div class="output-fields">
+                <div class="budget-value">
+                    <h4>BUDGET</h4>
+                    <div class="icon-price">
+                        <img src= "icons/budget.png">
+                    </div>
+
+                    <div class="budget-price">
+                        <p>₦ <span id="budget-value">0</span></p>
+                    </div>
+                </div>
+                <div class="expenses-value">
+                    <h4>EXPENSES</h4>
+                    <div class="icon-price">
+                        <img src= "icons/expenses.png">
+                    </div>
+                    <div class="expenses-price">
+                        <p>₦ <span id="expenses-value">0</span></p>
+                    </div>
+                </div>
+                <div class="balance-value">
+                    <h4>BALANCE</h4>
+                    <div class="icon-price">
+                        <img src= "icons/naira.png">
+                    </div>
+                    <div class="balance-price">
+                        <p>₦ <span id="balance-value">0</span></p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="lower-part">
+            <div class="expense-form">
+                <form id="expense-form">
+                    <div>
+                        <label for="expense-title">Please Enter Your Expense</label>
+                        <input type="text" id="expense-title">
+                    </div>
+
+                    <div>
+                        <label for="expense">Please Enter Your Expense Amount</label>
+                        <input type="number" id="expense">
+                    </div>
+
+                    <input type="submit" value="Add Expense">
+                </form>
+            </div>
+
+            <table class="expense-details">
+                <thead>
+                    <tr>
+                        <th>Expense Title</th>
+                        <th>Expense Value</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody id="expense-list"></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

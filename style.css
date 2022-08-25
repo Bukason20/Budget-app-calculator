@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(1, 1, 39);
+}
+
+.container {
+    /* background-color: green; */
+    max-width: fit-content;
+    height: fit-content;
+    margin: 40px auto 0;
+    border: 1px solid #dddddd;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.upper-part {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    margin: 1rem 0 3rem;
+}
+
+.budget-form{
+    border: 1px solid green;
+    background-color: rgb(247, 245, 245);
+    padding: 10px;
+    width: max-content;
+}
+.budget-form input[type =number]{
+    display: block;
+    width: 300px;
+    margin: 10px 0;
+    border: 1px solid green;
+    outline: none;
+    padding: 5px;
+    /* background: red; */
+}
+
+.budget-form input[type = submit]{
+    display: block;
+    color: green;
+    padding: 3px;
+    border: 1px solid green;
+}
+
+.output-fields{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+
+.budget-value h4, .expenses-value h4,.balance-value h4{
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.icon-price{
+    width: 40px;
+    margin: 0 auto 0.2rem;
+}
+.icon-price img{
+    width: 100%;
+    display: block;
+}
+
+.budget-price, .expenses-price,.balance-price{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 1000;
+    /* max-width: 800px; */
+    overflow-wrap: break-word;
+}
+
+.budget-price{
+    color: green;
+}
+
+.expenses-price{
+    color: red;
+}
+
+.balance-price{
+    color: black;
+}
+
+/* -----------------------------EXPENSE FORM PART----------------------------------- */
+.lower-part {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    /* margin: 1rem 0 3rem; */
+}
+
+.expense-form{
+    border: 1px solid red;
+    background-color: rgb(247, 245, 245);
+    padding: 10px;
+    width: max-content;
+}
+
+.expense-form input[type =number], .expense-form input[type = text]{
+    display: block;
+    width: 300px;
+    margin: 10px 0;
+    border: 1px solid red;
+    outline: none;
+    padding: 5px;
+    /* background: red; */
+}
+
+.expense-form input[type = submit]{
+    display: block;
+    color: red;
+    padding: 3px;
+    border: 1px solid red;
+}
+
+.expense-details{
+    /* background: blue; */
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.expense-details thead{
+    background-color: #f2f2f2
+}
+.expense-details tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+.expense-details th{
+    padding: 1rem;
+    text-align: left;
+    padding-bottom: 20px;
+
+}
+
+.expense-details td{
+    padding: 1rem;
+    text-align: left;
+    color: red;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    font-size: 1.2rem;
+    
+}
+.expense-price {
+    text-align: center !important;
+}
+
+.success {
+    background: rgb(90, 253, 90);
+    width: 400px;
+    margin: 1rem auto;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+
+.error{
+    background: rgb(253, 146, 146);
+    width: 400px;
+    margin: 1rem auto;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.delete{
+    width: 20px;
+}
