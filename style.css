@@ -7,6 +7,7 @@
 
 body {
     background-color: rgb(1, 1, 39);
+    overflow-x: hidden;
 }
 
 .container {
@@ -104,7 +105,7 @@ body {
     border: 1px solid red;
     background-color: rgb(247, 245, 245);
     padding: 10px;
-    width: max-content;
+    /* width: max-content; */
 }
 
 .expense-form input[type =number], .expense-form input[type = text]{
@@ -179,4 +180,75 @@ body {
 }
 .delete{
     width: 20px;
+}
+
+/* -------------------------------------MEDIA QUERY FOR SMALL PHONES------------------------ */
+
+@media screen and (max-width : 600px){
+    body {
+        /* background-color: red; */
+        /* overflow: hidden; */
+    }
+
+    .container {
+        overflow: hidden;
+        max-width: 300px;
+    }
+    .upper-part{
+        flex-direction: column;
+    }
+
+    .budget-form{
+        padding: 10px;
+        width: fit-content;
+        /* background-color: red; */
+        margin: 0 auto;
+    }
+
+    .budget-form input[type =number] {
+        width: 220px;
+    }
+
+    .budget-form label {
+        font-size: 0.8rem;
+    }
+
+    .budget-price, .expenses-price,.balance-price{
+        font-size: 1.5rem;
+        /* background-color: orange; */
+        /* max-width: 10px; */
+    }
+
+    .icon-price{
+        width: 30px;
+    }
+
+    .lower-part {
+        flex-direction: column;
+    }
+
+    .expense-form{
+        padding: 10px;
+        width: fit-content;
+        /* background-color: red; */
+        margin: 0 auto;  
+    }
+
+    .expense-form label {
+        font-size: 0.8rem;
+    }
+
+    .expense-form input[type =number], .expense-form input[type = text] {
+        width: 220px;
+    }
+
+    .output-fields {
+        gap: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        /* background-color: red; */
+        align-items: center;
+        margin: auto;
+    }
+
 }
